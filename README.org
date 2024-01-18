@@ -1,0 +1,46 @@
+#+AUTHOR: Marcus Pemer
+#+EMAIL: marcus@pemer.com
+
+* Detect-Encoding Library
+  :PROPERTIES:
+  :CUSTOM_ID: detect-encoding-library
+  :END:
+
+  The Detect-Encoding Library is a Common Lisp utility designed for detecting the encoding of text files. It offers functionality to guess between various encodings such as ASCII, UTF-8, and ISO-8859 families.
+
+** Features
+   - Detect file encoding with support for ASCII, UTF-8, ISO-8859-1, and ISO-8859-2.
+   - Handle different file sizes and formats.
+
+** Installation
+   To use the Detect-Encoding Library, clone this repository into your local Quicklisp local-projects directory:
+
+   #+BEGIN_SRC shell
+     git clone https://github.com/mpemer/detect-encoding.git ~/quicklisp/local-projects/detect-encoding
+   #+END_SRC
+
+** Usage
+   Once installed, you can load the library using Quicklisp:
+
+   #+BEGIN_SRC lisp
+     (ql:quickload :detect-encoding)
+   #+END_SRC
+
+   To detect the encoding of a file:
+
+   #+BEGIN_SRC lisp
+     (detect-encoding:encoding "path/to/your/file.txt")
+   #+END_SRC
+
+** Contributing
+   Contributions to enhance the library's accuracy or extend its capabilities are welcome. If you're interested in contributing, please fork the repository and submit a pull request.
+
+** License
+   This project is licensed under the GPL v3 License - see the LICENSE file for details.
+
+* Contact
+  :PROPERTIES:
+  :CUSTOM_ID: contact
+  :END:
+
+  For any inquiries or suggestions, feel free to reach out to Marcus Pemer at [[mailto:marcus@pemer.com][marcus@pemer.com]].
